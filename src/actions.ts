@@ -1,4 +1,3 @@
-import StoredState from './components/commonTypes/state'
 
 export const CHANGE_PIN_ADD = 'CHANGE_PIN_ADD'
 export const CHANGE_PIN_CLEAR = 'CHANGE_PIN_CLEAR'

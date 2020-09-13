@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import { NumberPad } from "./components/NumberPad";
 import StoredState from './components/commonTypes/state'
 import {  useSelector } from "react-redux";
 // import { Counter } from "./Counter";
@@ -9,10 +8,6 @@ import Board from './components/Board';
 // props
 // hooks
 // render props
-
-const onNumberAdd = (val : string) => { val = val + ""} ;
-const onPinClear = () => { } ;
-const onLockChange = () => { } ;
 
 const App: React.FC = () => {
     const enteredPin = useSelector((state : StoredState) => state.enteredPin);
@@ -24,9 +19,6 @@ const App: React.FC = () => {
       <div className="App">
           <div className="buttondiv">
             <Board 
-              onaddnumber={(value) => onNumberAdd(value) } 
-              onpinclear={onPinClear} 
-              onlockchange={onLockChange} 
             />
           </div>
           <div className="rightdiv">

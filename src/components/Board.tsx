@@ -8,13 +8,9 @@ import {
     CHANGE_PIN_TOGGLE_LOCK,
   } from '../actions'
 
-interface Prop {
-    onaddnumber: (val: string) => void;
-    onpinclear: () => void;
-    onlockchange: () => void;
-}
 
-export const Board: React.FC<Prop> = (props) => {
+
+export const Board: React.FC = () => {
     const dispatch = useDispatch();
 
     const onpinclear = useCallback(
