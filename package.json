@@ -18,7 +18,7 @@
     "watch": "^1.0.2"
   },
   "scripts": {
-    "start": "./node_modules/.bin/nodemon index.tsx",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
