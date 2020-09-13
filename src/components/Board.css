@@ -1,0 +1,12 @@
+.board {
+    width: 273px;
+    height: 165px;
+    background-color: grey;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px 10px 10px 10px;
+}
+
+
+  
+
