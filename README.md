@@ -10,6 +10,8 @@ npx create-react-app react-typescript --template typescript
 
 ---
 
+```js
+
 interface Props {
   text: string;
   ok?: boolean;
@@ -20,6 +22,9 @@ interface Props {
 }
 
 export const TextField: React.FC&lt;Props&gt; = ({ handleChange }) => {
+
+
+```
   
  - React.FC
     - react functional component
