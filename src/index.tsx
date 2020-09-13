@@ -10,7 +10,6 @@ import { createLogger } from "redux-logger";
 
 import { changePin } from "./reducer";
 
-console.log("index js");
 const logger = createLogger();
 
 const store = createStore(changePin, applyMiddleware(logger));

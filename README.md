@@ -37,3 +37,23 @@ export const TextField: React.FC<Props> = ({ handleChange }) => {
 npm install react-redux @types/react-redux   @reduxjs/toolkit
 
 ---
+
+useDispatch   -  makes dispatch with each component much easier
+
+
+
+
+
+
+
+
+
+---
+
+---
+
+
+
+
+
+

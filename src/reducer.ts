@@ -15,13 +15,11 @@ import {
   }
 
   export const changePin = (state=initialState, action : BoxActionTypes) : StoredState => {
-    console.log("changePin-reducer")
     switch (action.type) {
       case CHANGE_PIN_ADD:
         let curEnteredPin = state.enteredPin;
         if( curEnteredPin.length === MAX_PIN_DIGITS )
         {
-            console.log("MAX_PIN_DIGITS reached");
             return {...state, errorMsg: "PIN maximum length reached"};
             // return Object.assign({}, state, {errorMsg: "PIN maximum length reached" } );
         }
@@ -31,7 +29,6 @@ import {
             // return Object.assign({}, state, {enteredPin: state.enteredPin.concat(action.payload) ,errorMsg: "" } )          
         }
       case CHANGE_PIN_CLEAR:
-        console.log("CHANGE_PIN_CLEAR-------------------------- isLocked === false");
         return {...state, enteredPin: '' , errorMsg: ""}
         // return Object.assign({}, state, {enteredPin: '' , errorMsg: ""} )
       case CHANGE_PIN_TOGGLE_LOCK:        
