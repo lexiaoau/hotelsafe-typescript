@@ -1,6 +1,7 @@
 import React from 'react';
-import { TextField } from './TextField';
-// import './App.css';
+import './App.css';
+import logo from './hotelsafe.jpg'
+import { NumberPad } from "./components/NumberPad";
 
 // import { Counter } from "./Counter";
 
@@ -10,8 +11,11 @@ import { TextField } from './TextField';
 
 const App: React.FC = () => {
   return (
-    <div>
-       <TextField  person={{"firstName" :'tom' , "lastName":'lucas'}}  />
+    <div className="App" >
+      <img src={logo} alt="Logo" />
+      <NumberPad />
+      
+       {/* <TextField  person={{"firstName" :'tom' , "lastName":'lucas'}}  /> */}
       {/* <Counter>
         {({ count, setCount }) => (
           <div>
