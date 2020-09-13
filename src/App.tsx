@@ -13,7 +13,9 @@ const App: React.FC = () => {
     const enteredPin = useSelector((state : StoredState) => state.enteredPin);
     const errorMsg = useSelector((state : StoredState) => state.errorMsg);
     const isLocked = useSelector((state : StoredState) => state.isLocked);
-    const savedPin = useSelector((state : StoredState) => state.savedPin);
+    
+    let lightColor = isLocked ? "red" : "green";
+
     return (
       // <div className="">
       <div className="App">
@@ -28,6 +30,16 @@ const App: React.FC = () => {
                   readOnly
                 />   
                 <label>{errorMsg}</label>             
+              </div>
+              <div>
+                
+              </div>
+              <div className="checkboxdiv">
+                              {/* use svg to draw a circle, how could it be responsive?? */}
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                      {/* <circle cx="50" cy="50" r="10" stroke="black" fill={lightColor} />   */}
+                      <circle cx="50%" cy="50%" r="10" stroke="black" fill={lightColor} />                      
+                  </svg>
               </div>
 
             </div>
