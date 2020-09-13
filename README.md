@@ -21,7 +21,7 @@ interface Props {
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const TextField: React.FC&lt;Props&gt; = ({ handleChange }) => {
+export const TextField: React.FC<Props> = ({ handleChange }) => {
 
 
 ```
