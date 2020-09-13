@@ -19,9 +19,13 @@ interface Props {
   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const TextField: React.FC<Props> = ({ handleChange }) => {
+export const TextField: React.FC&lt;Props&gt; = ({ handleChange }) => {
   
  - React.FC
     - react functional component
+- &lt;Props&gt; 
+  - parameters to this function
+
+---
 
 ---
